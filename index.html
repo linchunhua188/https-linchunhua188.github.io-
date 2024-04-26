@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +11,208 @@
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #333;
+            background-color: #1B2C3D;
             color: #fff;
-            padding: 20px;
-            text-align: center;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            display: flex;
+            /* 固定高度 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
         }
+
+        .header-content {
+            max-width: 1200px;
+            /* 最大宽度 */
+            padding: 0 5rem;
+            /* 左右边距 */
+        }
+
+        .header-content p {
+            color: #cccccc;
+            font-size: 1.5rem;
+            max-width: 50rem;
+            text-align: center;
+            padding-top: 3rem;
+        }
+
+        .header-content div {
+            display: flex;
+            /* 固定高度 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+        }
+
+        .header-content a {
+            color: #1B2C3D;
+            font-size: 1.2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-decoration: none;
+        }
+
         section {
             text-align: center;
-            padding: 20px;
         }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
-            position: fixed;
             bottom: 0;
             width: 100%;
+            margin-top: 5rem;
+        }
+
+        .download-btn {
+            background-color: #fff;
+
+            border-radius: 2rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            /* 水平居中 */
+            margin-bottom: 1rem;
+        }
+
+        .logo img {
+            border-radius: 1rem;
+            width: 150px;
+            height: 150px;
+        }
+
+        .app-name {
+            margin-top: 5rem;
+        }
+
+        .section-content {
+            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #555;
+        }
+
+        .section-content img {
+            margin: 0.5rem;
+        }
+
+        .section-content p {
+            color: #999;
+        }
+
+        .section-seperator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-seperator div {
+            width: 50rem;
+            border-color: #cccccc;
+            border-width: 1px;
+            border-style: dashed;
+        }
+
+        .section-content div {
+            max-width: 50rem;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to My Application</h1>
-    <p>This is an awesome application that does amazing things!</p>
-</header>
+    <header>
+        <div class="header-content">
+            <div class="logo"><img src="./imgs/icon.jpg"></div>
+            <div>Version: 1.0</div>
+            <div class="app-name">
+                <h1>Ghost Clock</h1>
+            </div>
+            <div>
+                <div class="download-btn">
+                    <a href="https://itunes.apple.com/app/id6468918787">Download on The App Store →</a>
+                </div>
+            </div>
 
-<section>
-    <h2>Application Screenshots</h2>
-    <img src="screenshot1.jpg" alt="Screenshot 1" width="300">
-    <img src="screenshot2.jpg" alt="Screenshot 2" width="300">
-    <img src="screenshot3.jpg" alt="Screenshot 3" width="300">
-</section>
 
-<footer>
-    <p>Contact: example@example.com | Version: 1.0</p>
-</footer>
+            <div>
+                <p>A minimalist mobile clock application featuring themes such as retro flip, cosmic sky,
+                    light-sensitive
+                    capsules, and
+                    more.</p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+        <div class="section-content">
+            <div>
+                <h2>What is Ghost Clock?</h2>
+                <p>Ghost Clock is a minimalist mobile clock application designed for those who appreciate simplicity and
+                    personalization.
+                    It offers a variety of theme options including vintage flip, cosmic, and light-sensitive capsule
+                    designs, allowing you
+                    to create a unique clock experience according to your preferences. Whether placed on your office
+                    desk,
+                    study room, or
+                    coffee table, Ghost Clock serves as a perfect decorative piece, adding a touch of sophistication to
+                    your
+                    life.
+                    Additionally, we provide light and dark modes to cater to your personalized needs.</p>
+            </div>
+        </div>
+        <div class="section-seperator">
+            <div></div>
+        </div>
+        <div class="section-content">
+            <div>
+                <h2>Why did we make it?</h2>
+                <p>Our product was born out of a pursuit for focus and the beauty of life. We understand deeply the
+                    distractions that
+                    smartphones bring during work and study, hindering our ability to fully engage in tasks at hand.
+                    Hence, we created it
+                    with the aim of helping you break free from distractions and concentrate on the task itself.
+                    However, our intention goes
+                    beyond being a simple timekeeping tool. We aspire for it to transcend into a delightful decoration
+                    in your life, adding
+                    a touch of color to your daily routine. Therefore, we strive to make it both practical and
+                    aesthetically pleasing,
+                    fostering an environment where you can immerse yourself in focus and enjoy a more beautiful life.
+                </p>
+            </div>
+        </div>
+        <div class="section-seperator">
+            <div></div>
+        </div>
+
+        <div class="section-content">
+            <img src="./imgs/5.5-001.jpg" alt="Screenshot 1" width="300">
+            <img src="./imgs/5.5-002.jpg" alt="Screenshot 2" width="300">
+            <img src="./imgs/5.5-003.jpg" alt="Screenshot 3" width="300">
+            <img src="./imgs/5.5-004.jpg" alt="Screenshot 3" width="300">
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Contact Us: ghostclock_support@163.com</p>
+        <p>Copyright©2024 Ghost Clock</p>
+    </footer>
 
 </body>
+
 </html>
